@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".detail.ActMenuItem">
+
+    <com.erif.menuitem.MenuItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon_menu="@drawable/ic_settings_white"
+        app:title="Menu Item 1"/>
+
+    <com.erif.menuitem.MenuItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon_menu="@drawable/ic_settings_white"
+        app:background_color="@color/purple_200"
+        app:title="Menu Item 2"/>
+
+    <com.erif.menuitem.MenuItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon_menu="@drawable/ic_settings_white"
+        app:background_color="@color/teal_200"
+        app:shape="circle"
+        app:title="Menu Item 2"/>
+
+</LinearLayout>
