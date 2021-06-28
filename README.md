@@ -1,6 +1,10 @@
-# ErifLibraries
+# Erif Libraries
 This is a collection of several libraries that I have created
 
-# The following are the libraries contained in this application
+## The library contained in this application
 * Simple Menu Item
 * Coming soon
+
+```
+code blocks for commands
+```
