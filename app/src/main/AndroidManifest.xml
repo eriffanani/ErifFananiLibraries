@@ -9,16 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LibraryTry">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".detail.ActSnackBarQuick"/>
-        <activity android:name=".detail.ActMenuItem" />
-
+        <activity
+            android:name=".detail.ActSnackBarQuick"
+            android:exported="false" />
+        <activity
+            android:name=".detail.ActMenuItem"
+            android:exported="false" />
+        <activity
+            android:name=".detail.ActTextViewReadMore"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -1,15 +1,19 @@
 package com.erif.librarytry.detail
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import com.erif.librarytry.R
+import com.erif.readmoretextview.TextViewReadMore
 
-class ActMenuItem : AppCompatActivity() {
+class ActTextViewReadMore : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.act_menu_item)
+        setContentView(R.layout.act_text_view_read_more)
         setupToolbar()
+        val txt = findViewById<TextViewReadMore>(R.id.txtReadMore)
+        txt.text = resources.getString(R.string.lorem)
     }
 
     private fun setupToolbar() {

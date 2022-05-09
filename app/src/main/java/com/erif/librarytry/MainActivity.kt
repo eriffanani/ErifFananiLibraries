@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.erif.librarytry.detail.ActMenuItem
 import com.erif.librarytry.detail.ActSnackBarQuick
+import com.erif.librarytry.detail.ActTextViewReadMore
 import com.erif.librarytry.list.AdapterList
 import com.erif.librarytry.list.CallbackList
 import com.erif.librarytry.list.ListHelper
@@ -49,7 +50,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupList() {
         list = ArrayList()
         val mList = listOf(
-            "Menu Item", "Snack Bar Quick"
+            "Menu Item", "Snack Bar Quick", "TextView Read More"
         )
         for (item: String in mList) {
             list.add(item)
@@ -65,11 +66,14 @@ class MainActivity : AppCompatActivity() {
 
     private fun getDetail(position: Int): Class<*> {
         return when(position) {
-            ListHelper.LIB_MENU_ITEM -> {
-                ActMenuItem::class.java
+            ListHelper.LIB_SNACK_BAR -> {
+                ActSnackBarQuick::class.java
+            }
+            ListHelper.LIB_TEXTVIEW_READ_MORE -> {
+                ActTextViewReadMore::class.java
             }
             else -> {
-                ActSnackBarQuick::class.java
+                ActMenuItem::class.java
             }
         }
     }
